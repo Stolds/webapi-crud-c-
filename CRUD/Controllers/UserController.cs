@@ -12,7 +12,8 @@ namespace CRUD.Controllers
         {
             return new List<User>{
                 new User {Id = 483, Name = "Marcelo", birthDate = new DateTime(2001, 04, 22)},
-                new User {Id = 12, Name = "Gledson", birthDate = new DateTime(1980, 12, 28)}
+                new User {Id = 12, Name = "Gledson", birthDate = new DateTime(1980, 12, 28)},
+                new User {Id = 12, Name = "Galileu", birthDate = new DateTime(492, 12, 28)}
             };
         }
 

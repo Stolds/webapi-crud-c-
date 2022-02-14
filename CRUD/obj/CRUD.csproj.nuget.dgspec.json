@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\crud c#\\CRUD\\CRUD.csproj": {}
+    "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {}
   },
   "projects": {
-    "C:\\crud c#\\CRUD\\CRUD.csproj": {
+    "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\crud c#\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "C:\\crud c#\\CRUD\\CRUD.csproj",
+        "projectPath": "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
         "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\crud c#\\CRUD\\obj\\",
+        "outputPath": "c:\\crud c#\\webapi-crud-c-\\CRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
