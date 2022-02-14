@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {}
+    "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {}
   },
   "projects": {
-    "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {
+    "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "c:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
+        "projectPath": "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
         "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "c:\\crud c#\\webapi-crud-c-\\CRUD\\obj\\",
+        "outputPath": "C:\\crud c#\\webapi-crud-c-\\CRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,24 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
