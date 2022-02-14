@@ -938,19 +938,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pichau\\.nuget\\packages\\": {}
+    "C:\\Users\\caleb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\projects\\webapi-crud-c-\\CRUD\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\crud c#\\webapi-crud-c-\\CRUD\\CRUD.csproj",
-      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\crud c#\\webapi-crud-c-\\CRUD\\obj\\",
+      "projectPath": "C:\\projects\\webapi-crud-c-\\CRUD\\CRUD.csproj",
+      "packagesPath": "C:\\Users\\caleb\\.nuget\\packages\\",
+      "outputPath": "C:\\projects\\webapi-crud-c-\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\caleb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
