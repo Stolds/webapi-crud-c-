@@ -1,32 +1,51 @@
 
 using CRUD.Models;
+using CRUD.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/user")]
     public class UserController : ControllerBase
     {
-        private static List<User> Users()
+        private readonly IUserRepository repository;
+
+        public UserController(IUserRepository repository)
         {
-            return new List<User>{
-                new User {Id = 483, Name = "Marcelo", Hobby = "eat pizza"}
-            };
+            this.repository = repository;
         }
 
+
+
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok(Users());
+            var users = await repository.SearchUsers();
+            return users.Any()
+                ? Ok(users)
+                : NoContent();
+
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await repository.SearchUser(id);
+            if (user != null)
+            {
+                return Ok(user);
+            }
+            return NotFound($"The user with the id = {id} has not founded");
         }
 
         [HttpPost]
-        public IActionResult Post(User user)
+        public async Task<IActionResult> Post(User user)
         {
-            var users = Users();
-            users.Add(user);
-            return Ok(users);
+            repository.AddUser(user);
+            return await repository.SaveChangesAsync()
+            ? Ok("User added sucessfully")
+            : BadRequest("Error at saving a new user");
         }
     }
 }

@@ -17,7 +17,7 @@ namespace CRUD.Data
             user_model.HasKey(x => x.Id);
             user_model.Property(x => x.Id).HasColumnName("id").ValueGeneratedOnAdd();
             user_model.Property(x => x.Name).HasColumnName("name").IsRequired();
-            user_model.Property(x => x.Hobby).HasColumnName("hobby");
+            user_model.Property(x => x.Hobby).HasColumnName("hobby").IsRequired(false);
         }
     }
 }

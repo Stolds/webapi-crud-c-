@@ -2,8 +2,8 @@ namespace CRUD.Models
 {
     public class User
     {
-        public int Id {get; set;}
-        public string Name {get; set;}
-        public string Hobby {get; set;}
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string? Hobby { get; set; }
     }
 }
