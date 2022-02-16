@@ -18,7 +18,7 @@ namespace CRUD.Repository
 
         public void DeleteUser(User user)
         {
-            throw new NotImplementedException();
+            context.Remove(user);
         }
 
         public async Task<bool> SaveChangesAsync()
@@ -38,7 +38,7 @@ namespace CRUD.Repository
 
         public void UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            context.Update(user);
         }
     }
 }

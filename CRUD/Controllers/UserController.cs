@@ -47,5 +47,37 @@ namespace CRUD.Controllers
             ? Ok("User added sucessfully")
             : BadRequest("Error at saving a new user");
         }
+
+        [HttpPut("{id}")]
+
+        public async Task<IActionResult> Put(int id, User user)
+        {
+            var userDb = await repository.SearchUser(id);
+            if (userDb == null) return NotFound($"The user with the id = {id} has not been founded");
+
+            userDb.Name = user.Name ?? userDb.Name;
+            userDb.Hobby = user.Hobby != null
+            ? user.Hobby : userDb.Hobby;
+
+            repository.UpdateUser(userDb);
+
+            return await repository.SaveChangesAsync()
+                    ? Ok($"User with id = {id} has been updated")
+                    : BadRequest("Error at updating the user");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = await repository.SearchUser(id);
+            if (user == null) return NotFound($"The user with the id = {id} has not been founded");
+
+            repository.DeleteUser(user);
+
+            return await repository.SaveChangesAsync()
+                ? Ok($"User with id = {id} has been deleted")
+                : BadRequest("Error at trying to delete the user");
+
+        }
     }
 }
